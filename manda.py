@@ -114,9 +114,6 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(find_token.group(1))
             xd.close()
-            #print('%s║'%(O))
-            #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
-            exit
 def main():
     try:
         token = open("token.txt","r").read()
