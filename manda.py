@@ -58,7 +58,7 @@ def clear():
     elif "win" in sys.platform.lower():os.system("cls")
     else:os.system("clear")
 def banner():
-    print("\n%s    __  ____ _____  __**********___ _____     \n%s   /  \/   /__    )/  )__  ____/  /__    )  ║ %sDesign By %sRAKA %s& %sAMANDA\n%s  /       /___)   /  __  )/  __  /___)   / ║ %sFb %s: %sFb.me/GARANGAN.KECHE\n%s /  /\/  /  __   /  / / /   (_/ /  __   / ║ %sIg %s: %sraka_andrian27\n%s/__/  /_/(______/__/ /_/(______/(______/  ║ %sGt %s: %sGithub.com/Bangsat-XD\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
+    print("\n%s    __  ____ _____  __**********___ _____     \n%s   /  \/   /__    )/  )__  ____/  /__    )  ║ %sDesign By %sR %s& %sA\n%s  /       /___)   /  __  )/  __  /___)   / ║ %sFb %s: %sRaka\n%s /  /\/  /  __   /  / / /   (_/ /  __   / ║ %sIg %s: %sraka27\n%s/__/  /_/(______/__/ /_/(______/(______/  ║ %sGt %s: %sBangsat-XD\n"%(O,O,P,O,P,O,O,P,O,P,O,P,O,P,O,P,O,P))
 def menu_log():
     os.system('rm -rf token.txt')
     clear()
