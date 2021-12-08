@@ -385,7 +385,7 @@ def publik():
         y = json.loads(x.text)
         n = y['name']
     except (KeyError,IOError):
-        jalan('%s╚══®[%s!%s] %sToken/Cookies Invalid'%(M,P,M,P))
+        jalan('%s╚══®[%s!%s]◍➤ %sToken/Cookies Invalid'%(M,P,M,P))
         os.system('rm -rf token.txt')
         menu_log()
     except requests.exceptions.ConnectionError:
@@ -947,7 +947,7 @@ class crack:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
                             menu()
                     elif put in ['2','02','002','b']:
-                        print('%s╠══®[%s•%s] %sBring Up  CP Option? [y/t]'%(O,P,O,P))
+                        print('%s╠══®[%s•%s]◍➤ %sBring Up  CP Option? [y/t]'%(O,P,O,P))
                         puf = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
                         if puf in ['']:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
@@ -968,7 +968,7 @@ class crack:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
                             menu()
                     elif put in ['3','03','003','c']:
-                        print('%s╠══®[%s•%s] %sBring up CP Option? [y/t]'%(O,P,O,P))
+                        print('%s╠══®[%s•%s]◍➤ %sBring up CP Option? [y/t]'%(O,P,O,P))
                         puf = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
                         if puf in ['']:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
@@ -1027,7 +1027,7 @@ class crack:
                     menu()
             elif put in ['2','02','002','b']:
                 print('%s╠══®[%s•%s]◍➤ %sBring up CP option? [y/t]'%(O,P,O,P))
-                puf = input('%s╠══®[%s•%s] %sChoose : '%(O,P,O,P))
+                puf = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
                 if puf in ['']:
                     jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
                     menu()
