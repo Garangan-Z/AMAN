@@ -116,7 +116,7 @@ def menu_log():
             xd.close()
             #print('%s║'%(O))
             #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
-            exit(BeautifulSoup.main())
+            exit
 def main():
     try:
         token = open("token.txt","r").read()
