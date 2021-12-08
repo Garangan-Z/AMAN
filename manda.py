@@ -926,7 +926,7 @@ class crack:
                         jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
                         menu()
                     elif put in ['1','01','001','a']:
-                        print('%s╠══®[%s•%s]◍➤ %sBring Up  CP Option? [y/t]'%(O,P,O,P))
+                        print('%s╠══®[%s•%s]◍➤ %sBring Up CP Option? [y/t]'%(O,P,O,P))
                         puf = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
                         if puf in ['']:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
@@ -947,7 +947,7 @@ class crack:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
                             menu()
                     elif put in ['2','02','002','b']:
-                        print('%s╠══®[%s•%s]◍➤ %sBring Up  CP Option? [y/t]'%(O,P,O,P))
+                        print('%s╠══®[%s•%s]◍➤ %sBring Up CP Option? [y/t]'%(O,P,O,P))
                         puf = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
                         if puf in ['']:
                             jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
@@ -1007,7 +1007,7 @@ class crack:
                 jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
                 menu()
             elif put in ['1','01','001','a']:
-                print('%s╠══®[%s•%s]◍➤ %sBring up  CP Option? [y/t]'%(O,P,O,P))
+                print('%s╠══®[%s•%s]◍➤ %sBring up CP Option? [y/t]'%(O,P,O,P))
                 puf = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
                 if puf in ['']:
                     jalan('%s╚══®[%s!%s]◍➤ %sIsi Yang Benar'%(M,P,M,P))
@@ -1577,8 +1577,8 @@ def var_author():
     mlaku('%s╔══®[ %sAuthor & Team Project %s]'%(O,P,O))
     mlaku('%s║'%(O))
     mlaku('%s╠══®[%s•%s]◍➤ %sAuthor :'%(O,P,O,P))
-    mlaku('%s║     •◍➤ %sBAJINGAN'%(O,P))
-    mlaku('%s║     •◍➤ %sBANGSAT'%(O,P))
+    mlaku('%s║     •◍➤ %sBajingan-Z'%(O,P))
+    mlaku('%s║     •◍➤ %sBangsat-XD'%(O,P))
     mlaku('%s║'%(O))
     mlaku('%s╠══®[%s•%s]◍➤ %sTeam Project %sXNSCODE%s :'%(O,P,O,P,O,P))
     mlaku('%s║     •◍➤ %sBANGSAT'%(O,P))
