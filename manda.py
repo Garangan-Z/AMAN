@@ -4,7 +4,6 @@
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
-from bs4 import BeautifulSoup as par
 from datetime import date
 from datetime import datetime
 from urllib.parse import quote
@@ -79,10 +78,6 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(token)
             xd.close()
-            #print('%s║'%(O))
-            #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
-            exit(BeautifulSoup.main())
-            #menu()
         except (KeyError,IOError):
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P))
@@ -114,10 +109,7 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(find_token.group(1))
             xd.close()
-            #print('%s║'%(O))
-            #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             exit
-            exit(BeautifulSoup.main())
         except requests.exceptions.ConnectionError:
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sConnection Problem'%(M,P,M,P))
