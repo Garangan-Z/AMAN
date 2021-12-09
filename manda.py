@@ -189,7 +189,11 @@ def menu():
     except (KeyError,IOError):
         ip = " "
     print('%s╔══®[ %sWellcome %s %s]'%(O,P,n,O))
-    print('%s║'%(O))
+
+def menu():
+    clear()
+    banner()
+    try:
     print('%s╠══®[%s•%s]◍➤ %sID : %s'%(O,P,O,P,i))
     print('%s╠══®[%s•%s]◍➤ %sIP : %s'%(O,P,O,P,ip))
     print('%s╠══®[%s1%s]◍➤ %sCrack From Public %s'%(O,P,O,P,jid))
