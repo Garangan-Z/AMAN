@@ -192,7 +192,6 @@ def menu():
     print('%s║'%(O))
     print('%s╠══®[%s•%s]◍➤ %sID : %s'%(O,P,O,P,i))
     print('%s╠══®[%s•%s]◍➤ %sIP : %s'%(O,P,O,P,ip))
-    print('%s║'%(O))
     print('%s╠══®[%s1%s]◍➤ %sCrack From Public %s'%(O,P,O,P,jid))
     print('%s╠══®[%s2%s]◍➤ %sCrack From Follower %s'%(O,P,O,P,jid))
     print('%s╠══®[%s3%s]◍➤ %sCrack From likes post %s'%(O,P,O,P,jid))
