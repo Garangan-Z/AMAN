@@ -167,34 +167,6 @@ def menu():
     clear()
     banner()
     try:
-        lisensi = open("license.txt","r").read()
-        wl = requests.get(url_license + lisensi)
-        wk = json.loads(wl.text)
-        kun = lisensi.split('-')
-        users = wk['username']
-        mailerts = wk['email'].split('@')
-        mailert1 = mailerts[0]
-        mailert2 = mailerts[1]
-        mailer = mailert1[:2]
-        maile = (mailer+'xxxxx@'+mailert2)
-        bergabung = wk['joined']
-        kadaluarsa = wk['expired']
-        status = ('%sPremium [%sPro%s]'%(O,P,O))
-        kunci = ('%s%s%s-%s%s%s-%sXXXXX'%(O,kun[0],P,O,kun[1],P,O))
-        pro = ''
-        upgrade = 'Ganti License Key'
-        jid = ''
-    except (KeyError,IOError):
-        status = 'Pengguna Gratis'
-        users = '-'
-        maile = '-'
-        kunci = '-'
-        bergabung = '-'
-        kadaluarsa = '-'
-        pro = ("%s[%sPro%s]"%(O,P,O))
-        upgrade = ('Upgrade To Version %sPro'%(O))
-        jid = ('%s[%s5000 ID%s]'%(O,P,O))
-    try:
         token = open("token.txt","r").read()
         x = requests.get("https://graph.facebook.com/me?access_token=" + token)
         y = json.loads(x.text)
@@ -1618,4 +1590,4 @@ def folder():
 if __name__=='__main__':
   os.system('git pull')
   folder()
-  main_menu()
+  menu()
