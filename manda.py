@@ -192,7 +192,6 @@ def menu():
 
 def menu():
     clear()
-    banner()
     try:
     print('%s╠══®[%s•%s]◍➤ %sID : %s'%(O,P,O,P,i))
     print('%s╠══®[%s•%s]◍➤ %sIP : %s'%(O,P,O,P,ip))
