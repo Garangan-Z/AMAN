@@ -130,6 +130,7 @@ def menu():
         print("\033[1;96m\033[1;92m<>\033[1;96m\033[1;92m \033[1;97mBergabung  : \033[1;93m%s"%(tgl))
         print("\033[1;96m\033[1;92m<>\033[1;96m\033[1;92m \033[1;97mWELCOME    : \033[1;93m"+nama+"\033[1;92m \033[1;95m \033[1;96m")
         print("\033[1;96m\033[1;91m◍➤\033[1;96m\033[1;92m \033[1;96m==================================================")
+        print("%s💦'%")
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Clone from public friends")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Crack from public followers")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
@@ -255,6 +256,7 @@ def method():
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]")
+        print("%s💦'%")
 	method = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mOption : ")
 	if method == "":
 		menu()
@@ -273,7 +275,7 @@ def method():
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("\033[1;93m◍➤[\033[1;94m!\033[1;97m] Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
+		ask = raw_input("\033[1;93m◍➤[\033[1;97m Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
 		if ask == "y":
 			manual()
 		print(" ")
