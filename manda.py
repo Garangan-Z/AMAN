@@ -1618,5 +1618,4 @@ def folder():
 if __name__=='__main__':
   os.system('git pull')
   folder()
-  menu()
-# Mau Ngapain Cuk?
+  main_menu()
