@@ -193,7 +193,7 @@ def menu():
         bergabung = wk['joined']
         kadaluarsa = wk['expired']
         status = ('%sPremium [%sPro%s]'%(O,P,O))
-        kunci = ('%s%s%s-%s%s%s-%sXXXXX'%(O,kun[0],P,O,kun[1],P,O))
+        kunci = ('%s%s%s-%s%s%s-%s270885'%(O,kun[0],P,O,kun[1],P,O))
         pro = ''
         upgrade = 'Ganti License Key'
         jid = ''
