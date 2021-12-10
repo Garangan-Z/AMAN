@@ -1,6 +1,4 @@
 # Decompile by RAKA AMANDA
-# with (uncompyle6) version : 3.7.4
-# Time Succes decompile : 2021-10-12 15:47:11.403269
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess
 from random import randint
 from concurrent.futures import ThreadPoolExecutor as ThreadPool
