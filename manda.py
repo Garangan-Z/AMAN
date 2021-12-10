@@ -193,7 +193,7 @@ def menu():
         upgrade = 'Ganti License Key'
         jid = ''
     except (KeyError,IOError):
-        status = %s'%
+        status = 'Pengguna Gratis'
         users = %s'%
         maile = %s'%
         kunci = %s'%
