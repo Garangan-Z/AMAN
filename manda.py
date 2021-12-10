@@ -79,10 +79,10 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(token)
             xd.close()
-             print('%s║'%(O))
-             jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
+            print('%s║'%(O))
+            jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             exit(BeautifulSoup.main())
-             menu()
+            menu()
         except (KeyError,IOError):
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P))
