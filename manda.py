@@ -193,12 +193,12 @@ def menu():
         upgrade = 'Ganti License Key'
         jid = ''
     except (KeyError,IOError):
-        status = 'Pengguna Gratis'
-        users = '-'
-        maile = '-'
-        kunci = '-'
-        bergabung = '-'
-        kadaluarsa = '-'
+        status = %s'%
+        users = %s'%
+        maile = %s'%
+        kunci = %s'%
+        bergabung = %s'%
+        kadaluarsa = %s'%
         pro = ("%s[%sPro%s]"%(O,P,O))
         upgrade = ('Upgrade To Version %sPro'%(O))
         jid = ('%s[%s5000 ID%s]'%(O,P,O))
