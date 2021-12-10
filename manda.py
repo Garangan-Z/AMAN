@@ -226,6 +226,7 @@ def menu():
         ip = " "
     print('%s╔══®[ %sWellcome %s %s]'%(O,P,n,O))
     print('%s║'%(O))
+    print('%s╠══®[%s•%s]◍➤ %sBergabung  : %s'%(O,P,O,P,tgl))
     print('%s╠══®[%s•%s]◍➤ %sID : %s'%(O,P,O,P,i))
     print('%s╠══®[%s•%s]◍➤ %sIP : %s'%(O,P,O,P,ip))
     print('%s║'%(O))
