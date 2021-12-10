@@ -13,8 +13,6 @@ B = "\x1b[0;94m" # Biru
 U = "\x1b[0;95m" # Ungu
 O = "\x1b[0;96m" # Biru Muda
 N = "\033[0m"    # Warna Mati
-url_license = 'https://ngepetonline.000webhostapp.com/chek.php?project=testlicence&apikey='
-host = "https://mbasic.facebook.com"
 ok = []
 cp = []
 ttl = []
@@ -247,7 +245,6 @@ def menu():
     print('%s╠══®[%s6%s]◍➤ %sCheck Crack Results'%(O,P,O,P))
     print('%s╠══®[%s7%s]◍➤ %sCheck Crack Result Options %s'%(O,P,O,P,pro))
     print('%s╠══®[%s8%s]◍➤ %sUser Agent'%(O,P,O,P))
-    print('%s╠══®[%s9%s]◍➤ %s%s'%(O,P,O,P,upgrade))
     print('%s╠══®[%s0%s]◍➤ %sLog Out'%(O,P,O,P))
     pm = input('%s╠══®[%s•%s]◍➤ %sChoose : '%(O,P,O,P))
     print('%s║'%(O))
@@ -270,8 +267,6 @@ def menu():
         cek_hasil()
     elif pm in ['8','08','008','h']:
         ugen()
-    elif pm in ['9','09','009','i']:
-        buy_license()
     elif pm in ['0','00','000','j']:
         jalan('%s╚══®[%s!%s]◍➤ %sSee you later'%(O,P,O,P))
         os.system('rm -rf token.txt')
