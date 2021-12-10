@@ -193,12 +193,12 @@ def menu():
         upgrade = 'Ganti License Key'
         jid = ''
     except (KeyError,IOError):
-        print('%s╠══®[%s•%s]◍➤ %sStatus : %s'%(O,P,O,P,status))
-        print('%s╠══®[%s•%s]◍➤ %sName : %s'%(O,P,O,P,users))
-        print('%s╠══®[%s•%s]◍➤ %sEmail : %s'%(O,P,O,P,maile))
-        print('%s╠══®[%s•%s]◍➤ %sKey : %s'%(O,P,O,P,kunci))
-        print('%s╠══®[%s•%s]◍➤ %sJoin Since : %s'%(O,P,O,P,bergabung))
-        print('%s╠══®[%s•%s]◍➤ %sValid until : %s'%(O,P,O,P,kadaluarsa))
+        Status : 'Pengguna Premium'
+        Name : '-'
+        Email : '-'
+        Key : '-'
+        Join Since : '-'
+        Valid until : '-'
         pro = ("%s[%sPro%s]"%(O,P,O))
         upgrade = ('Upgrade To Version %sPro'%(O))
         jid = ('%s[%s5000 ID%s]'%(O,P,O))
