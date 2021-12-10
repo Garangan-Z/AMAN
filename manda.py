@@ -79,10 +79,10 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(token)
             xd.close()
-            #print('%s║'%(O))
-            #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
+             print('%s║'%(O))
+             jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             exit(BeautifulSoup.main())
-            #menu()
+             menu()
         except (KeyError,IOError):
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P))
@@ -114,8 +114,8 @@ def menu_log():
             xd = open("token.txt", "w")
             xd.write(find_token.group(1))
             xd.close()
-            #print('%s║'%(O))
-            #jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
+            print('%s║'%(O))
+            jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             exit
             exit(BeautifulSoup.main())
         except requests.exceptions.ConnectionError:
@@ -226,7 +226,6 @@ def menu():
         ip = " "
     print('%s╔══®[ %sWellcome %s %s]'%(O,P,n,O))
     print('%s║'%(O))
-    print('%s╠══®[%s•%s]◍➤ %sBergabung  : %s'%(O,P,O,P,tgl))
     print('%s╠══®[%s•%s]◍➤ %sID : %s'%(O,P,O,P,i))
     print('%s╠══®[%s•%s]◍➤ %sIP : %s'%(O,P,O,P,ip))
     print('%s║'%(O))
