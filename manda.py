@@ -86,6 +86,7 @@ def menu_log():
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
             menu_log()
+            exit()
         except (KeyError,IOError):
             print('%s║'%(M)) 
             print('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P)) 
