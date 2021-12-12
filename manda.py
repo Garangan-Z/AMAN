@@ -557,6 +557,7 @@ def generate2(_cici_):
     _dapunta_.append("indonesia")
     _dapunta_.append("sayangkamu")
     _dapunta_.append("bangsat")
+    _dapunta_.append("bismillah")
     return _dapunta_
 def generate3(_cici_):
     _dapunta_=[]
