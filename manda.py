@@ -53,7 +53,7 @@ def clear():
     elif "win" in sys.platform.lower():os.system("cls")
     else:os.system("clear")
 def banner():
-    print("\n    __  ____ _____  __**********___ _____ ®    \n   /  \/   /__    )/  )__  ____/  /__    )  \n")
+    print("__**********___ _____")
 def menu_log():
     os.system('rm -rf token.txt')
     clear()
