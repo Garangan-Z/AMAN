@@ -63,13 +63,12 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 def logo():
 	os.system("clear")
 	print("""\033[1;97m 
-        \033[1;95m█████╗░███╗░░██╗░██████╗░░██████╗░░█████╗░ \033[1;96m™ \033[1;95m
-       ██╔══██╗████╗░██║██╔════╝░██╔════╝░██╔══██╗
-       ███████║██╔██╗██║██║░░██╗░██║░░██╗░███████║
-       \033[1;92m██╔══██║██║╚████║██║░░╚██╗██║░░╚██╗██╔══██║
-       ██║░░██║██║░╚███║╚██████╔╝╚██████╔╝██║░░██║
-       ╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝ \033[1;97m 
-                                                       
+        \033[1;91m______  ___             _________       
+\033[1;92m___   |/  /_____ _____________  /_____ _
+\033[1;93m__  /|_/ /_  __ `/_  __ \  __  /_  __ `/
+\033[1;94m_  /  / / / /_/ /_  / / / /_/ / / /_/ / 
+\033[1;95m/_/  /_/  \__,_/ /_/ /_/\__,_/  \__,_/  
+\033[1;96m      ╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░░╚═════╝░╚═╝░░╚═╝ \033[1;97m                                                      
   \033[1;95m──────═• \033[1;92m● \033[1;95m══════════════════════════════ \033[1;92m● \033[1;97m\033[1;95m•═──────  
 \033[1;93m◍➤\033[1;97m Author     : \033[1;92m☆ ANGGA \033[1;96m™ \033[1;92m☆ \033[1;97m
 \033[1;93m◍➤\033[1;97m Github     : \033[1;92mhttps://github.com/Bajingan-Z \033[1;97m
@@ -303,7 +302,11 @@ def cek_ttl_cp(uid, pw):
 def bapi(user):
 	try:
 		ua = open(".ua", "r").read()
+                ua = random.choice()
 	except IOError:
+                ua = ("Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/10.0.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML,like Gecko) BrowserNG/7.1.17125")
+                ua = ("BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103")
+                ua = ("BlackBerry7130e/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/104")
                 ua = ("Mozilla/5.0 (Linux; U; Android 4.1.2; de-de; GT-I8190 Build/JZO54K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30;]")
                 ua = ("Mozilla/5.0 (Linux; Android 5.1; A1601 Build/LMY47I) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.98 Mobile Safari/537.36;]")
                 ua = ("Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36;]")
