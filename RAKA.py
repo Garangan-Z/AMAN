@@ -138,7 +138,7 @@ def menu():
 	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]\n")
 		
-	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option : \033[1;92m")
+	Bilal = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option : \033[1;92m")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
@@ -155,7 +155,7 @@ def menu():
 		print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA OK")
 		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA CP")
 		print(" ")
-		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option  : \033[1;92m")
+		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
 		elif cek == "1":
@@ -204,7 +204,7 @@ def publik():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m[\033[1;92m•\033[1;97m]\033[1;97m Target Id       : \033[1;92m")
+	idt = raw_input("\033[1;97m[\033[1;92m•\033[1;97m]\033[1;97m Target Id      : \033[1;92m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
