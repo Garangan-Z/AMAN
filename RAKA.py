@@ -89,7 +89,8 @@ def login():
 		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
-		token = raw_input("[?] ☆ENTER TOKEN☆ ™︻®╤───────═◍➤ : ")
+		token = raw_input("[\033[1;92m•\033[1;97m] ☆LOGIN TOKEN☆ : \033[1;92m")
+                jalan("[\033[1;92m•\033[1;97m] Please Wait \033[1;92m... \033[1;97m");time.sleep(000.05)
 		if token == "":
 			print("Wrong Input")
 		try:
@@ -138,7 +139,7 @@ def menu():
 	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]\n")
 		
-	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option : \n")
+	Bilal = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option : ")
 	if Bilal =="":
 		menu()
 	elif Bilal == "1" or Bilal == "01":
@@ -468,9 +469,9 @@ def manual():
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	print("\n[+] Type , For 2nd Password For Example : 112233,334455,445566,223344 etc")
-	asu = raw_input("[+] Enter Passwords : ").split(",")
+	asu = raw_input("[•] Enter Passwords : ").split(",")
 	if len(asu) =="":
-		exit("[?] Wrong Input")
+		exit("[•] Wrong Input")
 	print("[+] Enter 2-4 Passwords For Fast Cracking Speed\n")
 
 	def main(user):
@@ -519,7 +520,7 @@ def manual():
 def setting_ua():
 	print("[1] Change User-Agent")
 	print("[2] Default User-Agent")
-	ua = raw_input("\n [?] Choose : ")
+	ua = raw_input("\n [•] Choose : ")
 	if ua =="":
 		menu()
 	elif ua == "1":
