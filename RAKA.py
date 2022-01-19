@@ -138,8 +138,8 @@ def menu():
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m4\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check crack results")
 	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Exit\033[1;97m [ \033[1;91mRemove-Token \033[1;97m]\n")
-		
+	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;91m Remove-Token")
+	print("\033[1;96m[\033[1;93m0\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Exit\n")		
 	Bilal = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option : \033[1;92m")
 	if Bilal =="":
 		menu()
@@ -161,6 +161,9 @@ def menu():
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
 		login()
+        elif Bilal == "0"
+                jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
+		os.system('exit')
 		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
