@@ -205,11 +205,11 @@ def menu():
 			print("\033[0;96m # ----------------------------------------------")
 			exit(" ")
                 elif cek == "6":
-                        try:
-                                jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
-		                os.system('rm -rf login_r.txt')
-		                exit(" ")
-		                menu()
+                        jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
+		        os.system('rm -rf login_r.txt')
+		        exit(" ")
+		menu()
+
 def publik():
 	global token
 	try:
