@@ -272,7 +272,7 @@ def method():
 		menu()
 	elif method == "1":
 		ask = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwors ? y/t : \033[1;92m")
-                print"(\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ...")
+                print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ...")
 		if ask == "y":
 			manual()
 		print(" ")
