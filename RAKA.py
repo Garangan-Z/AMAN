@@ -161,7 +161,7 @@ def menu():
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
 		login()
-        elif Raka == "0"
+        elif Raka == "0" or Raka == "00":
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
 		os.system('exit')
 		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option  : \033[1;92m")
