@@ -161,8 +161,8 @@ def menu():
                 login()
                 method()
         elif Raka == "0" or Raka == "00":
-                jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
-		os.system('exit')
+                exit()
+                method()
 		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
@@ -207,7 +207,10 @@ def menu():
                 elif cek == "6":
                         jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
 		        os.system('rm -rf login_r.txt')
-		        exit(" ")
+		        login()
+                elif cek == "0":
+                        jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
+		        os.system('exit')
 		menu()
 
 def publik():
