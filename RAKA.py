@@ -116,12 +116,12 @@ def menu():
 		token = open("login.txt","r").read()
 	except KeyError:
 		os.system("rm -f login.txt")
-		exit("[?] Login Error")
+		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mLogin Error\033[1;97m")
 	try:
 		nama = requests.get("https://graph.facebook.com/me/?access_token="+token).json()["name"].lower()
 	except IOError:
 		os.system("rm -f login.txt")
-		exit("\033[1;96m[\033[1;93m+\033[1;96m] Token Error")
+		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m...")
 	except requests.exceptions.ConnectionError:
 		exit(" ! no internet connection")
 
