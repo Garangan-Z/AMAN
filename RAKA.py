@@ -210,7 +210,6 @@ def menu():
 		                os.system('rm -rf login_r.txt')
 		                exit(" ")
 		                menu()
-    
 def publik():
 	global token
 	try:
