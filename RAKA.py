@@ -158,9 +158,9 @@ def menu():
 		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check results RAKA_AMANDA CP")
 		print(" ")
         elif Bilal == "6" or Bilal == "06":
-                jalan('[•] Delete Token....');time.sleep(1)
+                jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
-		exit()
+		login()
 		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
