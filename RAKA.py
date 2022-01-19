@@ -106,7 +106,7 @@ def login():
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
-			exit("[?] Login Error")
+			exit("\033[1;97m[\033[1;92m•\033[1;97m] \033[1;91mLogin Error\033[1;97m")
 
 # Menu Raka Andrian Tara
 def menu():
