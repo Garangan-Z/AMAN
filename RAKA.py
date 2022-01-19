@@ -195,7 +195,7 @@ def menu():
 				file = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] File Name : ")
 				if file == "":
 					menu()
-				Totalcp = open("CP/%s"\%(file)).read().splitlines()
+				Totalcp = open("CP/%s"%(file)).read().splitlines()
 			except IOError:
 				exit(" ! file %s tidak tersedia"%(file))
 			nm_file = ("%s"%(file)).replace("-", " ")
