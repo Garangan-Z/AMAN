@@ -181,14 +181,14 @@ def menu():
 				exit(" ! file %s tidak tersedia"%(file))
 			nm_file = ("%s"%(file)).replace("-", " ")
 			del_txt = nm_file.replace(".txt", "")
-			print(" # ----------------------------------------------")
+			print(" \033[1;94m # ----------------------------------------------")
 			print(" Crack Resulte : %s Total : %s\033[0;92m"%(del_txt, len(Totalok)))
 			os.system("cat OK/%s"%(file))
 			print(" \033[0;94m # ----------------------------------------------")
 			exit(" ")
 		elif cek == "2":
 			dirs = os.listdir("CP")
-			print("\033[1;96m[\033[1;93m•\033[1;96m] Copy File Name And Past into Input")
+			print("\033[1;96m[\033[1;93m•\033[1;96m] Copy File Name And Past Into Input")
 			for file in dirs:
 				print(" + "+file)
 			try:
@@ -200,7 +200,7 @@ def menu():
 				exit(" ! file %s tidak tersedia"%(file))
 			nm_file = ("%s"%(file)).replace("-", " ")
 			del_txt = nm_file.replace(".txt", "")
-			print("# ----------------------------------------------")
+			print("\033[1;96m # ----------------------------------------------")
 			print(" Crack results : %s total : %s\033[0;93m"%(del_txt, len(Totalcp)))
 			os.system("cat CP/%s"%(file))
 			print("\033[0;96m # ----------------------------------------------")
@@ -221,7 +221,7 @@ def publik():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("[\033[1;92m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def follower():
 	global token
@@ -237,7 +237,7 @@ def follower():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("[\033[1;93m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
+	print("[\033[1;92m•\033[1;97m] Total Id        : \033[0;91m%s\033[0;97m"%(len(id))) 
 
 def massal():
 	global token
@@ -258,7 +258,7 @@ def massal():
 				id.append(uid+"<=>"+nama)
 		except KeyError:
 			print("\033[1;93m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("[\033[1;93m•\033[1;97m] Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
+	print("[\033[1;92m•\033[1;97m] Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
 
 def method():
 	print("[\033[1;92m•\033[1;97m] Choose Crack Methode [ \033[1;92mRecommended M-Basic \033[1;97m]")
@@ -283,7 +283,7 @@ def method():
 		ThreadPool(30).map(mbasic, id)
 		exit("Program End")
 	elif method == "3":
-		ask = raw_input("[\033[1;93m•\033[1;97m] Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
+		ask = raw_input("[\033[1;92m•\033[1;97m] Do you choose manual passwords ? y/t\033[1;97m [ \033[1;92mDefault: t\033[1;97m ] ")
 		if ask == "y":
 			manual()
 		print(" ")
@@ -528,14 +528,14 @@ def manual():
 def setting_ua():
 	print("[1] Change User-Agent")
 	print("[2] Default User-Agent")
-	ua = raw_input("\n [•] Choose : ")
+	ua = raw_input("\n[•] Choose : ")
 	if ua =="":
 		menu()
 	elif ua == "1":
 		c_ua = raw_input(" [+] Enter User-Agent : ")
 		open(".ua", "w").write(c_ua)
 		time.sleep(1)
-		raw_input("\n [!] Press Enter To Save User-Agent")
+		raw_input("\n[•] Press Enter To Save User-Agent")
 		menu()
 	elif ua == "2":
 		print("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
