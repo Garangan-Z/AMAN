@@ -129,11 +129,11 @@ def menu():
 # Raka Logo
 	raka_logo()
 	ip = requests.get('https://api.ipify.org').text
-        print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m==================================================")
+        print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m=================================================")
         print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mBergabung  : \033[1;93m%s"%(tgl))
         print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mNama       : \033[1;93m"+nama+"\033[1;92m")
         print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mIp Usert   : \033[1;93m%s"%(ip))
-        print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m==================================================\n")
+        print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m=================================================\n")
 	print("\033[1;96m[\033[1;93m1\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Crack Id Public + Friends")
 	print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Crack Id Followers")
 	print("\033[1;96m[\033[1;93m3\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
@@ -141,7 +141,7 @@ def menu():
 	print("\033[1;96m[\033[1;93m5\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m User-Agent Settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
 	print("\033[1;96m[\033[1;93m6\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;91m Remove-Token")
 	print("\033[1;96m[\033[1;93m0\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Exit\n")		
-	Raka = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option     : \033[1;92m")
+	Raka = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option     : \033[1;92m")
 	if Raka =="":
 		menu()
 	elif Raka == "1" or Raka == "01":
@@ -272,11 +272,12 @@ def method():
 		menu()
 	elif method == "1":
 		ask = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwors ? y/t : \033[1;92m")
-                print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ...")
+                print("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Jika Tak Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
+                print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m3\033[1;97m Hari...")
 		exit("Program End")
 	elif method == "2":
 		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
@@ -330,7 +331,7 @@ def bapi(user):
                 ua = ("NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;97m[\033[1;92mR\033[1;97m] \033[0;92mCrack \033[0;93m••>\033[0;95m %s/%s ••> [OK:-%s] ® \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;97m[\033[1;92mR\033[1;97m] \033[0;92mCrack \033[0;93m-\033[0;95m %s/%s  [OK:-%s] - \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
