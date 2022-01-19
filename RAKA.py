@@ -158,11 +158,12 @@ def menu():
 		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
         elif Raka == "6" or Raka == "06":
-                login()
-                method()
+                jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
+	        os.system('rm -rf login_r.txt')
+		login()
         elif Raka == "0" or Raka == "00":
-                exit()
-                method()
+                jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
+		os.system('exit')
 		cek = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
@@ -204,13 +205,6 @@ def menu():
 			os.system("cat CP/%s"%(file))
 			print("\033[0;96m # ----------------------------------------------")
 			exit(" ")
-                elif cek == "6":
-                        jalan('\033[1;97m[\033[1;92m•\033[1;97m] Delete Token....');time.sleep(1)
-		        os.system('rm -rf login_r.txt')
-		        login()
-                elif cek == "0":
-                        jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
-		        os.system('exit')
 		menu()
 
 def publik():
