@@ -125,8 +125,8 @@ def menu():
 	except requests.exceptions.ConnectionError:
 		exit("\033[1;97m[\033[1;92m•\033[1;97m] No Internet Connection...!")
 
-# Logo (LO GADA OTAK)
-	logo()
+# Raka Logo
+	raka_logo()
 	ip = requests.get('https://api.ipify.org').text
         print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m==================================================")
         print("\033[1;96m\033[1;92m<•>\033[1;96m\033[1;92m \033[1;97mBergabung  : \033[1;93m%s"%(tgl))
