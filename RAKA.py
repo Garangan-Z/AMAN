@@ -158,7 +158,7 @@ def menu():
 		print("\033[1;96m[\033[1;93m2\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
         elif Raka == "6" or Raka == "06":
-                remove()
+                login()
                 method()
         elif Raka == "0" or Raka == "00":
                 jalan('\033[1;97m[\033[1;92m•\033[1;97m] Please Come Back...');time.sleep(1)
