@@ -277,22 +277,24 @@ def method():
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
-                print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m3\033[1;97m Hari...")
-		exit("Program End")
+                print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Program End")
 	elif method == "2":
 		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
-		exit("Program End")
+                print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Program End")
 	elif method == "3":
 		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mobile, id)
-		exit("Program End")
+                print("\n\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Program End")
 	else:
 		menu()
 
