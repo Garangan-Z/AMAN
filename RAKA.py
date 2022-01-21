@@ -259,7 +259,7 @@ def massal():
 				id.append(uid+"<=>"+nama)
 		except KeyError:
 			print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Account Friend List Is Not Public")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total id    : \033[0;92m%s\033[0;96m\n"%(len(id)))
 
 def method():
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m] \033[1;97mSilahkan Di Coba Satu Satu...\n")
