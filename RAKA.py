@@ -529,6 +529,7 @@ def aa_raka():
 		os.system("rm -f .raka")
 		time.sleep(1)
 		raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m User-Agent Save Successfully")
+                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Returen...")
 		menu()
 
 def raka_andrian():
