@@ -75,7 +75,7 @@ def raka_logo():
 \033[1;93m⋆✥⋆➣\033[1;97m Author     : \033[1;92m☆ Angga \033[1;96m™ \033[1;92m☆ \033[1;97m
 \033[1;93m⋆✥⋆➣\033[1;97m Github     : \033[1;92mhttps://github.com/Bajingan-Z \033[1;97m
 \033[1;93m⋆✥⋆➣\033[1;97m Facebook   : \033[1;92mfb.me/PEMUDA.KALEUM \033[1;97m
-\033[1;93m⋆✥⋆➣\033[1;97m Twitter    : \033[1;92mBangsat_XD \033[1;97m    """)
+\033[1;93m⋆✥⋆➣\033[1;97m Coded By   : \033[1;92mRaka \033[1;97m& \033[1;92mAngga \033[1;97m    """)
 def login():
 	os.system("clear")
 	try:
@@ -89,6 +89,8 @@ def login():
 	except KeyError, IOError:
 		token = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m ☆LOGIN TOKEN☆ : \033[1;92m")
                 jalan("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Please Wait \033[1;92m... \033[1;97m");time.sleep(000.05)
+                os.system("xdg-open https://youtu.be/bszAm4C5ovE")
+		exit()
 		if token == "":
 			print("Wrong Input")
 		try:
