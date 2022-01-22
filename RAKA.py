@@ -136,10 +136,9 @@ def menu():
         print("\033[1;96m\033[1;91m✥\033[1;96m\033[1;92m \033[1;96m═════════════════════════════════════════════━──⋆✥⋆➣\n")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Crack Id Public + Friends")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Crack Id Followers")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m]\033[1;97m Multi cracking from public Id\033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m4\033[1;96m]\033[1;97m Check Crack Results")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;97m User-Agent Settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m6\033[1;96m]\033[1;91m Remove-Token")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m]\033[1;97m Check Crack Results")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m4\033[1;96m]\033[1;97m User-Agent Settings \033[1;97m [ \033[1;95mPro \033[1;97m]")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;91m Remove-Token")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m0\033[1;96m]\033[1;97m Exit\n")		
 	Raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option     : \033[1;92m")
 	if Raka =="":
@@ -153,12 +152,12 @@ def menu():
 	elif Raka == "3" or Raka == "03":
 		massal()
 		method()
-	elif Raka == "4" or Raka == "04":
+	elif Raka == "3" or Raka == "03":
 		print(" ")
 		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Check Results RAKA_AMANDA OK")
 		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
-        elif Raka == "6" or Raka == "06":
+        elif Raka == "5" or Raka == "05":
                 jalan('\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Delete Token....');time.sleep(1)
 	        os.system('rm -rf login_r.txt')
 		login()
@@ -250,7 +249,7 @@ def massal():
 	try:
 		tanya_Total = int(input("\033[1;92m⋆✥⋆➣\033[1;97m Enter Multiple ID Option : "))
 	except:tanya_Total= "1"
-	for t in massal()
+	for t in massal
 		t += "1"
 		idt = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Target Id %s     : "%(t))
 		try:
