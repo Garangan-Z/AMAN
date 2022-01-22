@@ -138,6 +138,7 @@ def menu():
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Crack Id Followers")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m]\033[1;97m Check Crack Results")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m4\033[1;96m]\033[1;97m User-Agent Settings")
+        print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;97m Report A Bug")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;91m Remove Token")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m0\033[1;96m]\033[1;97m Exit\n")		
 	Raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option     : \033[1;92m")
@@ -157,7 +158,12 @@ def menu():
         elif Raka == "4" or Raka == "04":
                 aa_raka()
                 mathod()
-        elif Raka == "5" or Raka == "05":
+	elif Raka == "5" or Raka == "05":
+		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Anda Akan Diarahkan Ke Messenger")
+		time.sleep(1)
+		os.system("xdg-open https://m.me/PEMUDA.KALEUM?text=Hallo%20Bang%20Ganteng")
+		exit()
+        elif Raka == "6" or Raka == "06":
                 jalan('\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Delete Token....');time.sleep(1)
 	        os.system('rm -rf login_r.txt')
 		login()
