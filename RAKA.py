@@ -329,7 +329,6 @@ def bapi(user):
 		pwx = [ name+"2", name+"12", name+"123" ]
 	else:
 		pwx = [ name+"123", name+"1234", name+"12345" ]
-                pwx = [ sayang, anjing, bismillah, indonesia, "786786" ]
 	try:
 		for pw in pwx:
 			pw = pw.lower()
