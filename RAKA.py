@@ -159,12 +159,12 @@ def menu():
                 mathod()
 	elif Raka == "5" or Raka == "05":
 		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Anda Akan Diarahkan Ke Messenger")
-		time.sleep(1)
+		time.sleep(00.01)
 		os.system("xdg-open https://m.me/PEMUDA.KALEUM?text=Hallo%20Bang%20Ganteng")
 		exit()
         elif Raka == "6" or Raka == "06":
                 jalan('\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Delete Token....');time.sleep(1)
-	        os.system('rm -rf login_r.txt')
+	        os.system("login.txt", "r")
 		login()
         elif Raka == "0" or Raka == "00":
                 jalan('\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Please Come Back...!');time.sleep(1)
