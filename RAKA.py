@@ -154,7 +154,7 @@ def menu():
 		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Check Results RAKA_AMANDA OK")
 		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
-        elif Raka == "4" or Raka == "04"
+        elif Raka == "4" or Raka == "04":
                 seting_ua()
                 mathod()
         elif Raka == "5" or Raka == "05":
