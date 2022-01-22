@@ -155,7 +155,7 @@ def menu():
 		print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Check Results RAKA_AMANDA CP")
 		print(" ")
         elif Raka == "4" or Raka == "04":
-                seting_ua()
+                aa_raka()
                 mathod()
         elif Raka == "5" or Raka == "05":
                 jalan('\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Delete Token....');time.sleep(1)
@@ -512,7 +512,7 @@ def manual():
         print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Copy Paste Hasil Crack Dan Simpan Selama \033[1;92m3 \033[1;97mHari")
 	exit("\n\n # [>Program Close<]")
 
-def setting_ua():
+def aa_raka():
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Change User-Agent")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Default User-Agent")
 	ua = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Choose : ")
