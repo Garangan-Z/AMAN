@@ -249,9 +249,9 @@ def massal():
 		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m \033[1;91mToken Expired\033[1;97m")
 	try:
 		tanya_Total = int(input("\033[1;92m⋆✥⋆➣\033[1;97m Enter Multiple ID Option : "))
-	except:tanya_Total=1
-	for t in range(tanya_Total):
-		t +=1
+	except:tanya_Total= "1"
+	for t in range()
+		t += "1"
 		idt = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Target Id %s     : "%(t))
 		try:
 			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
