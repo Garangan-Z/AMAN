@@ -250,7 +250,7 @@ def massal():
 	try:
 		tanya_Total = int(input("\033[1;92m⋆✥⋆➣\033[1;97m Enter Multiple ID Option : "))
 	except:tanya_Total= "1"
-	for t in range(tanya_total)
+	for t in range(tanya_total):
 		t += "1"
 		idt = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Target Id %s     : "%(t))
 		try:
