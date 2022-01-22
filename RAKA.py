@@ -50,7 +50,7 @@ def  jalan(z):
 	for e in z + '\n':
 		sys.stdout.write(e)
 		sys.stdout.flush()
-		time.sleep(000.05)
+		time.sleep(00.01)
 
 
 my_date = date.today()
@@ -139,7 +139,7 @@ def menu():
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m]\033[1;97m Check Crack Results")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m4\033[1;96m]\033[1;97m User-Agent Settings")
         print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;97m Report A Bug")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;91m Remove Token")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m6\033[1;96m]\033[1;91m Remove Token")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m0\033[1;96m]\033[1;97m Exit\n")		
 	Raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option     : \033[1;92m")
 	if Raka =="":
