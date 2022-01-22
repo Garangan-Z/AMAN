@@ -237,23 +237,6 @@ def follower():
 		exit("\033[1;92m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total Id    : \033[0;91m%s\033[0;97m"%(len(id))) 
 
-def massal():
-	global token
-	try:
-		token = open("login.txt", "r").read()
-	except IOError:
-		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m \033[1;91mToken Expired\033[1;97m")
-	try:
-		tanya_Total = int(input("\033[1;92m⋆✥⋆➣\033[1;97m Enter Multiple ID Option : "))
-		idt = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Target Id %s     : "%(t))
-		try:
-			for i in requests.get("https://graph.facebook.com/%s/friends?access_token=%s"%(idt, token)).json()["data"]:
-				uid = i["id"]
-				nama = n["name"].rsplit(" ")[0]
-				id.append(uid+"<=>"+nama)
-		except KeyError:
-			print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Account Friend List Is Not Public")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
 def method():
         print("\n") 
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m] \033[1;97mB-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
