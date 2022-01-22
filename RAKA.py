@@ -90,7 +90,7 @@ def login():
 		token = raw_input("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m ☆LOGIN TOKEN☆ : \033[1;92m")
                 jalan("\033[1;96m[\033[1;93m•\033[1;96m] \033[1;92m⋆✥⋆➣\033[1;97m Please Wait \033[1;92m... \033[1;97m");time.sleep(000.05)
                 os.system("xdg-open https://youtu.be/bszAm4C5ovE")
-		exit()
+		menu()
 		if token == "":
 			print("Wrong Input")
 		try:
