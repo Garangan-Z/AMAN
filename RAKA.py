@@ -513,20 +513,20 @@ def manual():
 	exit("\n\n # [>Program Close<]")
 
 def aa_raka():
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Change User-Agent")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Masukan User-Agent")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Default User-Agent")
-	ua = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Choose : ")
-	if ua =="":
+	raka = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Choose : \033[1;92m")
+	if raka =="":
 		menu()
-	elif ua == "1":
-		c_ua = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Enter User-Agent : ")
-		open(".ua", "w").write(c_ua)
+	elif raka == "1":
+		c_raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Enter User-Agent : ")
+		open(".raka", "w").write(c_raka)
 		time.sleep(1)
 		raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Press Enter To Save User-Agent")
 		menu()
-	elif ua == "2":
+	elif raka == "2":
 		print("Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]")
-		os.system("rm -f .ua")
+		os.system("rm -f .raka")
 		time.sleep(1)
 		raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m User-Agent Save Successfully")
 		menu()
