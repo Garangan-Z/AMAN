@@ -261,7 +261,6 @@ def massal():
 		except KeyError:
 			print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Account Friend List Is Not Public")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total id    : \033[0;92m%s\033[0;96m"%(len(id)))
-
 def method():
         print("\n") 
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m] \033[1;97mB-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
