@@ -247,15 +247,15 @@ def follower():
 
 def method():
         print("\n") 
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m] \033[1;97mB-Api\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m] \033[1;97mM-Basic\033[1;97m [ \033[1;95mFast \033[1;97m]")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m] \033[1;97mTouch Facebook\033[1;97m [ \033[1;95mNormal \033[1;97m]\n")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m] \033[1;97mB-Api\033[1;97m ( \033[1;95mCepat \033[1;97m)")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m] \033[1;97mM-Basic\033[1;97m ( \033[1;95mNormal \033[1;97m)")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m] \033[1;97mTouch Facebook\033[1;97m ( \033[1;95mSlow \033[1;97m)\n")
 	method = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m] \033[1;97mOption     : \033[1;92m")
 	if method == "":
 		menu()
 	elif method == "1":
 		ask = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Menggunakan Passwords Manual ? y/t : \033[1;92m")
-                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
+                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
@@ -264,7 +264,7 @@ def method():
 		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Crack Selesai...")
 	elif method == "2":
 		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Menggunakan Passwords Manual ? y/t : \033[1;92m")
-                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
+                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
@@ -273,12 +273,12 @@ def method():
 		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Crack Selesai...")
 	elif method == "3":
 		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Mengunakan Passwords Manual ? y/t : \033[1;92m")
-                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mainkan Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
+                print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
 		print(" ")
 		ThreadPool(30).map(mobile, id)
-                print("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
+                print("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Simpan Hasil CP Slama \033[1;92m5\033[1;97m Hari...")
 		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Crack Selesai...")
 	else:
 		menu()
