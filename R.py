@@ -228,7 +228,7 @@ def publik():
 			id.append(uid+"<=>"+nama)
 	except KeyError:
 		exit("\033[1;92m⋆✥⋆➣\033[1;97m Account Friend List Is Not Public")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total Id   : \033[0;92m%s\033[0;97m"%(len(id))) 
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Total Id   : \033[0;92m%s\033[0;97m\n"%(len(id))) 
 
 def follower():
 	global token
