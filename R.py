@@ -141,7 +141,7 @@ def menu():
         print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;97m Report A Bug")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m6\033[1;96m]\033[1;91m Remove Token")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m0\033[1;96m]\033[1;97m Exit\n")		
-	Raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option     : \033[1;92m\n")
+	Raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option     : \033[1;92m")
 	if Raka =="":
 		menu()
 	elif Raka == "1" or Raka == "01":
@@ -171,7 +171,7 @@ def menu():
                 jalan('\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Please Come Back...!');time.sleep(1)
 		os.system('exit')
                 exit(" ")
-		cek = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option  : \033[1;92m\n")
+		cek = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
 		elif cek == "1":
