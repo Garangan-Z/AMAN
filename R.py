@@ -171,7 +171,7 @@ def menu():
                 jalan('\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Please Come Back...!');time.sleep(1)
 		os.system('exit')
                 exit(" ")
-		cek = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option  : \033[1;92m")
+		cek = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option  : \033[1;92m")
 		if cek =="":
 			menu()
 		elif cek == "1":
