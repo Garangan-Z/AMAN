@@ -15,9 +15,6 @@ os.system("clear")
 
 
 delay=mxanh+"""        
-                      \033[1;31mYTB: \033[1;33mVăn Phương Tricker 💖
-"""
-
 for c in delay:
   sys.stdout.write(c)
   sys.stdout.flush()
@@ -40,10 +37,6 @@ print(mxanh+f"\033[1;32m[\033[1;31m●\033[1;32m]Tool FREEE - Cấm {mtrang}Mua 
 
 os.system("clear")
 delay=mxanh+"""        
-
-                 \033[1;31mYTB: \033[1;33mVăn Phương Tricker 💖
-"""
-
 for c in delay:
   sys.stdout.write(c)
   sys.stdout.flush()
@@ -83,10 +76,6 @@ except:
       break
 os.system("clear")
 delay=mxanh+"""        
-
-                 \033[1;31mYTB: \033[1;33mVăn Phương Tricker 💖
-"""
-
 for c in delay:
   sys.stdout.write(c)
   sys.stdout.flush()
