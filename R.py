@@ -256,7 +256,7 @@ def method():
 	if method == "":
 		menu()
 	elif method == "1":
-		ask = raw_input("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Menggunakan Passwords Manual ? y/t : \033[1;92m")
+		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Menggunakan Password Manual ? y/t : \033[1;92m")
                 print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
@@ -265,7 +265,7 @@ def method():
                 print("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
 		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Crack Selesai...")
 	elif method == "2":
-		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Menggunakan Passwords Manual ? y/t : \033[1;92m")
+		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Menggunakan Password Manual ? y/t : \033[1;92m")
                 print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
@@ -274,7 +274,7 @@ def method():
                 print("\n\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Simpan Hasil Crack Slama \033[1;92m5\033[1;97m Hari...")
 		exit("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Crack Selesai...")
 	elif method == "3":
-		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Mengunakan Passwords Manual ? y/t : \033[1;92m")
+		ask = raw_input("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Mau Mengunakan Password Manual ? y/t : \033[1;92m")
                 print("\033[1;92m⋆✥⋆➣\033[1;96m[\033[1;93m•\033[1;96m]\033[1;97m Lama Ga Ada Hasil Mode Pesawat \033[1;92m1 \033[1;97mDetik ?")
 		if ask == "y":
 			manual()
